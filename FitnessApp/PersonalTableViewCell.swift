@@ -43,7 +43,7 @@ class PersonalTableViewCell: UITableViewCell {
         let reviews:Int = personal.objectForKey("reviews")!.integerValue!
         self.reviewsLbl.text = "\(reviews) reviews"
         
-        var specialities : NSArray = personal["specialities"] as! NSArray
+        let specialities : NSArray = personal["specialities"] as! NSArray
         self.specialitiesLbl.text = "\(specialities[0]), \(specialities[1])"
         
         let years:Int = personal.objectForKey("years")!.integerValue!
@@ -59,7 +59,7 @@ class PersonalTableViewCell: UITableViewCell {
         
 
         // photo
-        var nameDict : NSDictionary = personal["name"] as! NSDictionary
+        let nameDict : NSDictionary = personal["name"] as! NSDictionary
         if let imgName = nameDict.objectForKey("first") as? String {
             self.photoView.image = UIImage(named: imgName)
         } else {

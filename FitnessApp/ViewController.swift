@@ -44,7 +44,6 @@ class ViewController: UIViewController {
         
         // animation for inicial logo before start UI
         let force : Float = 1
-        let delay: Float = 0
         let curve = CAMediaTimingFunction(controlPoints: 0.68, -0.55, 0.265, 1.55)
         
         let animation = CAKeyframeAnimation()
@@ -225,7 +224,7 @@ class ViewController: UIViewController {
     
     // MARK: - after intro animation finish, building the UI
     
-    override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
+    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
         self.logoImgView.hidden = true
         firstLoading = false
         self.startAllAnimations()

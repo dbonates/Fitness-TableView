@@ -42,7 +42,6 @@ class ListTableViewController: UITableViewController {
         
         let force = 0.2
         let duration = 1
-        let delay = 0.2
         let amount = 0.2
         
         animationLeft.keyPath = "transform.rotation"
