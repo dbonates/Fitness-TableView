@@ -40,7 +40,7 @@ class ListTableViewController: UITableViewController {
         
         // MARK: - setup animation for 'wooble' effect of photos on cells
         
-        let force = 0.2
+        let force = 0.4
         let duration = 1
         let amount = 0.2
         

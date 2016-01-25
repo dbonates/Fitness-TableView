@@ -51,11 +51,11 @@ class ViewController: UIViewController {
         animation.keyPath = "position.y"
         
         // for shake animation instead
-        //        animation.values = [0, 30*force, -30*force, 30*force, -400]
-        //        animation.keyTimes = [0, 0.2, 0.4, 0.6, 0.8]
+        animation.values = [0, 30*force, -30*force, 30*force, -400]
+        animation.keyTimes = [0, 0.2, 0.4, 0.6, 0.8]
         
-        animation.values = [0, 30*force, -400]
-        animation.keyTimes = [0, 0.2, 0.4]
+        //animation.values = [0, 30*force, -400]
+        //animation.keyTimes = [0, 0.2, 0.4]
         
         animation.timingFunction = curve
         animation.duration = 1.8
